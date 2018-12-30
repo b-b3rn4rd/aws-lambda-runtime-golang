@@ -1,0 +1,26 @@
+{
+  "Vendor": true,
+  "Deadline": "2m",
+  "WarnUnmatchedDirective": true,
+  "Exclude": [
+    "mocks"
+  ],
+  "DisableAll": true,
+  "Enable": [
+    "deadcode",
+    "gocyclo",
+    "gofmt",
+    "goimports",
+    "golint",
+    "gosimple",
+    "ineffassign",
+    "interfacer",
+    "lll",
+    "misspell",
+    "unconvert",
+    "unused",
+    "vet"
+  ],
+  "Cyclo": 16,
+  "LineLength": 200
+}
