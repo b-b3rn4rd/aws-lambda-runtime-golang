@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/b-b3rn4rd/aws-lambda-runtime-golang/pkg/runtime"
+	"github.com/aws/aws-lambda-go/lambda"
 )
 
 // User lambda response struct
@@ -12,7 +12,7 @@ type User struct {
 }
 
 func main() {
-	runtime.Start(func(ctx context.Context, payload User) (map[string]string, error) {
+	lambda.Start(func(ctx context.Context, payload User) (map[string]string, error) {
 		return map[string]string{
 			"name": payload.Name,
 		}, nil
